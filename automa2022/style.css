@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+body{
+    background-image: url(imagens/backgroudcc.png);
+    margin: 0px;
+
+}
+    /** navegation**/
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.menu img{
+    letter-spacing: 1px;
+    float: left;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 80px;
+    padding: 0px, 0px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+.menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: .3s;
+}
+
+.menu ul li a:hover {
+    background-color: #0011ff;
+}
+
+/**sub menu**/
+
+.menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul ul {
+    width: 150px
+}
+
+.menu ul ul li a {
+    display: block;
+    text-align: left;
+}
+/** Conteudo Central da primeira pagina **/
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: lighter;
+}
+.content h1{
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 0px;
+    transition: .4s;
+}
+.content h3{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    transition: .9s;
+}
+.content h1:hover{
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.content h3:hover{
+    text-decoration: underline;
+    transition: .9s;
+}
